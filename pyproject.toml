@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "turbine-blade-suite"
+version = "0.1.0"
+description = "Synthetic turbine blade dataset toolkit with OBJ zones, YOLO export, and expert rules."
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+turbine-blade-suite = "turbine_blade_suite.cli:main"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
